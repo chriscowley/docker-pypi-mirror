@@ -1,0 +1,4 @@
+#!/bin/sh
+if [ $RUN_PYPI_CRON ]; then
+  sleep $[ ( $RANDOM % 360 )  + 1 ]s && /usr/local/bin/bandersnatch mirror
+fi
